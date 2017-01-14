@@ -4,9 +4,9 @@ This c++ code simulates a horse doing random movements to see how many steps it 
 I create it on a Os machine but i think it sould work on any machine (Im not a program so I may be wrong).
 
 If you are on mac is as simple as downloading all the files into a folder going to the folder in tht Terminal and tipping:
-  -g++ main.cpp horse.cpp -o run.exe
-  -./run.exe
-  
-  
-I hope you have fun with the program
+```
+g++ main.cpp horse.cpp -o run.exe
+./run.exe
+```
+
 Ps: Have some fun with the printPosition function of the horse class, but be aware that maybe the sleep() function can give some trouble.
