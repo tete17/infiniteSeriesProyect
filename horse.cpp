@@ -133,29 +133,37 @@ void horse::printPosition(){
     for (int i=7; i>=0; i--) {
         
         for (int j=0; j<8; j++) {
-            cout<<" -- ";
+            cout<<" ::::::::::::::";
         }
         cout<<endl;
-        for (int j=0; j<9; j++) {
-            if (position[0]==j && position[1]==i) {
-                cout<<"| * ";
-            }else{
-                cout<<"|   ";
+        for (int n=0; n<6; n++) {
+            
+            for (int j=0; j<9; j++) {
+                if (position[0]==j && position[1]==i) {
+                    if (n==0) {
+                        cout<<":    |\\.       ";
+                    }else if (n==1){
+                        cout<<":   /*  '.     ";
+                    }else if (n==2){
+                        cout<<":  /_.'-  \\    ";
+                    }else if (n==3){
+                        cout<<":     /   |    ";
+                    }else if (n==4){
+                        cout<<":    /____|    ";
+                    }else if (n==5){
+                        cout<<":   `.____.´   ";
+                    }
+                }else{
+                    cout<<":              ";
+                }
             }
+            cout<<endl;
+            
         }
-        cout<<endl;
-        for (int j=0; j<9; j++) {
-            if (position[0]==j && position[1]==i) {
-                cout<<"| * ";
-            }else{
-                cout<<"|   ";
-            }
-        }
-        cout<<endl;
         
     }
     for (int j=0; j<8; j++) {
-        cout<<" -- ";
+        cout<<" ::::::::::::::";
     }
     cout<<endl;
     sleep(1);
