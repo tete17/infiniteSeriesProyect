@@ -3,5 +3,6 @@ project(infiniteSeriesProjec)
 
 set(CMAKE_CXX_STANDARD 11)
 
+
 set(SOURCE_FILES main.cpp horse.cpp)
 add_executable(infiniteSeriesProject ${SOURCE_FILES})
