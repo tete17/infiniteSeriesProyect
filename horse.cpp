@@ -43,13 +43,9 @@ void horse::move(int dx, int dy){
 }
 
 bool horse::moveIsLegal(int dx, int dy){
-    
-    if ((position[0]+dx < 8 && position[0]+dx > -1) &&
-        (position[1]+dy < 8 && position[1]+dy > -1)) {
-        return true;
-    }else{
-        return false;
-    }
+
+    return (position[0] + dx < 8 && position[0] + dx > -1) &&
+           (position[1]+dy < 8 && position[1]+dy > -1);
     
 }
 
